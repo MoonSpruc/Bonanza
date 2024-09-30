@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.min.css?_v=20240930104812">
+      <link rel="shortcut icon" href="favicon.ico">
+      <style>
+         body {
+            opacity: 0;
+         }
+      </style>
+      <title>Bonanza</title>
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <header class="header">
+            <div class="header__container">
+               <div class="header__burger">
+                  <button type="button" class="icon-menu"><span></span></button>
+               </div>
+               <a href="home.html" class="header__logo">
+                  <img src="img/logo.png" alt="Logo">
+               </a>
+               <ul class="header__list">
+                  <li class="header__item"><a href="menu.html" class="header__link">Menu</a></li>
+                  <li class="header__item"><a href="about.html" class="header__link">About</a></li>
+               </ul>
+               <a href="reservation.html" class="header__button">Book a Table</a>
+               <div class="header__menu menu-header">
+                  <nav class="menu-header__body">
+                     <ul data-line-effect="300" class="menu-header__list">
+                        <li class="menu-header__item"><a href="menu.html" class="menu-header__link">Menu</a></li>
+                        <li class="menu-header__item"><a href="reservation.html" class="menu-header__link">Reservation</a></li>
+                        <li class="menu-header__item"><a href="contact.html" class="menu-header__link">Contact</a></li>
+                        <li class="menu-header__item"><a href="about.html" class="menu-header__link">About</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </header>
+         <main class="page">
+            <section data-watch class="page__reservation reservation">
+               <div class="reservation__container">
+                  <div class="reservation__body block-section">
+                     <h2 class="block-section__title title">Book a Table</h2>
+                     <img class="block-section__main-image" src="img/reservation/main-image.jpg" alt="Picture">
+                  </div>
+                  <div class="reservation__content">
+                     <h4 class="reservation__title">Reservation</h4>
+                     <div class="reservation__text">
+                        <p>
+                           Reserve your seat at Bonanza for great meats and an unforgettable dining experience.
+                        </p>
+                     </div>
+                     <form action="#" class="reservation__form form">
+                        <div class="form__item">
+                           <input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name" class="form__input">
+                        </div>
+                        <div class="form__item">
+                           <input data-required autocomplete="off" type="tel" name="form[]" data-error="Error" placeholder="Phone Number" class="form__input">
+                        </div>
+                        <div class="form__items">
+                           <div class="form__item">
+                              <input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Guests" class="form__input">
+                           </div>
+                           <div class="form__item">
+                              <input data-datepicker data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Date" class="form__input">
+                           </div>
+                           <div class="form__item">
+                              <input data-required autocomplete="off" type="time" value="13:30" name="form[]" data-error="Error" placeholder="Time" class="form__input">
+                           </div>
+                        </div>
+                        <div class="form__item">
+                           <button type="submit" class="form__button">Reserve</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </section>
+         </main>
+         <footer class="footer">
+            <div class="footer__container"></div>
+         </footer>
+      </div>
+      <script src="js/app.min.js?_v=20240930104812"></script>
+   </body>
+
+</html>
